@@ -46,7 +46,7 @@ class Object: public ObjectRosCom{
 public:
     Object(std::string a_name, std::string a_namespace, int a_freq_min, int a_freq_max, double time_out);
     inline int get_num_of_children(){return m_State.children_names.size();}
-    inline std::vector<std::string> get_children_names(){return m_State.children_names;}
+    inline std::vector  <std::string> get_children_names(){return m_State.children_names;}
 
     bool is_joint_idx_valid(int joint_idx);
     int get_joint_idx_from_name(std::string joint_name);
